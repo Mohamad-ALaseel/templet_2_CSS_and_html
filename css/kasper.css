@@ -11,15 +11,17 @@ html {
 }
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: black;
 }
 :root {
   --mian-color: #19c8fa;
   --transparent-color: rgb(15 116 143 / 70%);
+  --color-p: #777;
+  --main-padding: 100px;
 }
 ul {
   list-style: none;
 }
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -46,6 +48,55 @@ ul {
 }
 /* end glopel rulez */
 
+/* start componants */
+.main-heading {
+  text-align: center;
+}
+.main-heading h2 {
+  text-transform: uppercase;
+  margin-bottom: 70px;
+  font-weight: normal;
+  position: relative;
+  font-size: 40px;
+}
+.main-heading h2::before {
+  content: "";
+  width: 120px;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -30px;
+
+  background-color: black;
+}
+.main-heading h2::after {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: white;
+  border: 2px solid black;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -40px;
+}
+.main-heading p {
+  color: #777;
+  line-height: 2;
+  width: 550px;
+  max-width: 100%;
+  margin: 0 auto 100px;
+}
+
+/* 2 */
+.main-padding {
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+}
+/* end componants */
+
 /* start header */
 header {
   position: absolute;
@@ -58,6 +109,7 @@ header .container {
   justify-content: space-between;
   align-items: center;
   position: relative;
+  min-height: 97px;
 }
 header .container::after {
   content: "";
@@ -239,3 +291,40 @@ header nav .form i {
   border-color: var(--mian-color);
 }
 /* end landing */
+/* start Services */
+
+.Services .Services-cont {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-column-gap: 40px;
+  grid-row-gap: 60px;
+}
+.Services .Services-cont .srv-box {
+  display: flex;
+}
+@media (max-width: 767px) {
+  .Services .Services-cont .srv-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .Services .Services-cont .srv-box i {
+    width: 100%;
+    margin: 0 0 30px;
+    
+  }
+}
+.Services .Services-cont .srv-box i {
+  margin-right: 50px;
+}
+.Services .Services-cont .srv-box .text h2 {
+  color: var(--mian-color);
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+.Services .Services-cont .srv-box .text p {
+  color: var(--color-p);
+  line-height: 2;
+}
+/* end Services */
