@@ -641,6 +641,12 @@ header nav .form i {
   border-radius: 50%;
   margin-right: 50px;
 }
+@media (max-width:767px){
+  .our-skills .Testimonials .box img{
+    margin: 0 0 20px ;
+  }
+  
+}
 .our-skills .Testimonials .box .text {
   border-bottom: 2px solid #ccc;
   line-height: 1.8;
@@ -675,87 +681,49 @@ header nav .form i {
 }
 
 .our-skills .Skills .box {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   position: relative;
 }
-.our-skills .Skills .box::before {
-  content: "";
-  width: 100%;
-  height: 30px;
-  position: absolute;
-  background-color: #eee;
-  bottom: -50px;
-}
-.our-skills .Skills .box::after {
-  content: "";
-  width: 90%;
-  height: 30px;
-  position: absolute;
-  background-color: var(--mian-color);
-  bottom: -50px;
-}
-.our-skills .Skills div:nth-of-type(3)::after {
-  content: "";
-  width: 85%;
-  height: 30px;
-  position: absolute;
-  background-color: var(--mian-color);
-  bottom: -50px;
-}
-.our-skills .Skills div:nth-of-type(4)::after {
-  content: "";
-  width: 80%;
-  height: 30px;
-  position: absolute;
-  background-color: var(--mian-color);
-  bottom: -50px;
-}
+
 .our-skills .Skills .box h4 {
   font-weight: normal;
   text-transform: uppercase;
+  margin-bottom: 15px;
 }
-.our-skills .Skills .box p {
+.our-skills .Skills .box .gros{
+  background-color: #dedadc;
+  height: 30px;
+}
+.our-skills .Skills .box .gros span{
+  display: block;
+  background-color: var(--mian-color);
+  height: 100%;
+  position: relative;
+}
+.our-skills .Skills .box .gros span::before{
+  content: attr(data-gros);
   position: absolute;
-  top: 0px;
-  left: 90%;
-  transform: translateX(-50%);
   background-color: black;
   color: white;
-  padding: 5px 0;
-  border-radius: 5px;
+  top: -40px;
+  right: 0;
+  transform: translateX(50%);
+  padding: 4px ;
+  border-radius: 4px ;
+
 }
-.our-skills .Skills div:nth-of-type(3) p {
-  position: absolute;
-  top: 0px;
-  left: 85%;
-  transform: translateX(-50%);
-  background-color: black;
-  color: white;
-  padding: 5px 0;
-  border-radius: 5px;
-}
-.our-skills .Skills div:nth-of-type(4) p {
-  position: absolute;
-  top: 0px;
-  left: 80%;
-  transform: translateX(-50%);
-  background-color: black;
-  color: white;
-  padding: 5px 0;
-  border-radius: 5px;
-}
-.our-skills .Skills .box p::before {
+.our-skills .Skills .box .gros span::after {
   content: "";
   width: 0;
   height: 0;
-  border: 5px solid black;
+  border: 8px solid black;
   border-bottom-color: transparent;
   border-left-color: transparent;
   border-right-color: transparent;
   position: absolute;
-  bottom: -9px;
-  left: 50%;
-  transform: translateX(-50%);
+  right: 0;
+  transform: translateX(50%);
+  top: -10px;
 }
 
 /* <!-- end skills --> */
