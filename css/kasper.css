@@ -609,14 +609,13 @@ header nav .form i {
 .our-skills .me {
   flex-basis: 45%;
 }
-@media (max-width:992px) {
+@media (max-width: 992px) {
   .our-skills .me {
     flex-basis: 100%;
   }
-  .our-skills .Testimonials{
+  .our-skills .Testimonials {
     margin-bottom: 50px;
   }
-  
 }
 .our-skills .me .text1 {
   padding: 0 50px 50px;
@@ -641,23 +640,21 @@ header nav .form i {
   border-radius: 50%;
   margin-right: 50px;
 }
-@media (max-width:767px){
-  .our-skills .Testimonials .box img{
-    margin: 0 0 20px ;
+@media (max-width: 767px) {
+  .our-skills .Testimonials .box img {
+    margin: 0 0 20px;
   }
-  
 }
 .our-skills .Testimonials .box .text {
   border-bottom: 2px solid #ccc;
   line-height: 1.8;
 }
 
-@media (max-width:767px) {
-  .our-skills .Testimonials .box{
+@media (max-width: 767px) {
+  .our-skills .Testimonials .box {
     flex-direction: column;
     text-align: center;
   }
-  
 }
 .our-skills .Testimonials .box .text .active {
   text-align: right;
@@ -690,17 +687,17 @@ header nav .form i {
   text-transform: uppercase;
   margin-bottom: 15px;
 }
-.our-skills .Skills .box .gros{
+.our-skills .Skills .box .gros {
   background-color: #dedadc;
   height: 30px;
 }
-.our-skills .Skills .box .gros span{
+.our-skills .Skills .box .gros span {
   display: block;
   background-color: var(--mian-color);
   height: 100%;
   position: relative;
 }
-.our-skills .Skills .box .gros span::before{
+.our-skills .Skills .box .gros span::before {
   content: attr(data-gros);
   position: absolute;
   background-color: black;
@@ -708,9 +705,8 @@ header nav .form i {
   top: -40px;
   right: 0;
   transform: translateX(50%);
-  padding: 4px ;
-  border-radius: 4px ;
-
+  padding: 4px;
+  border-radius: 4px;
 }
 .our-skills .Skills .box .gros span::after {
   content: "";
@@ -727,3 +723,118 @@ header nav .form i {
 }
 
 /* <!-- end skills --> */
+
+/* <!-- start  qoute--> */
+.qoute {
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+  background-image: url(../image/quote.jpg);
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  color: white;
+}
+.qoute::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(0 0 0 /70%);
+}
+.qoute .container {
+  position: relative;
+}
+.qoute .container q {
+  font-size: 30px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+/* <!-- end  qoute--> */
+
+/* <!-- start Pricing--> */
+.Pricing-cont {
+  padding: var(--main-padding) 0;
+  text-align: center;
+}
+.Pricing-cont .salary {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+.Pricing-cont .salary .box {
+  border-top: 1px solid var(--mian-color);
+
+  background-color: #fcfcfc;
+}
+.Pricing-cont .salary .box .me {
+  padding: 40px 20px;
+}
+.Pricing-cont .salary .box h3 {
+  font-size: 22px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.Pricing-cont .salary .box span {
+  font-size: 50px;
+  font-weight: bold;
+
+  position: relative;
+}
+.Pricing-cont .salary .box span::before {
+  content: "$";
+  position: absolute;
+  font-size: 30px;
+  font-weight: normal;
+  top: -20px;
+  left: -35px;
+}
+.Pricing-cont .salary .box span::after {
+  content: "/Mo";
+  font-size: 20px;
+  position: relative;
+  right: -15px;
+}
+.Pricing-cont .salary .box ul {
+  border-top: 1px solid var(--mian-color);
+  border-bottom: 1px solid var(--mian-color);
+}
+.Pricing-cont .salary .box ul li {
+  padding: 20px 0;
+  position: relative;
+}
+.Pricing-cont .salary .box ul li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 140px;
+  background-color: var(--mian-color);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.Pricing-cont .salary .box a {
+  display: block;
+  text-decoration: none;
+  margin: 30px auto;
+  width: fit-content;
+  padding: 20px;
+  border: 1px solid var(--mian-color);
+}
+.Pricing-cont > p{
+  margin: 50px 0 20px  ;
+}
+.Pricing-cont > a{
+  text-decoration: none;
+  padding: 20px 30px;
+  background-color: var(--mian-color);
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  color: white;
+
+}
+/* <!-- end Pricing--> */
