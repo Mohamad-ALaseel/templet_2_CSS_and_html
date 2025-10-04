@@ -824,10 +824,10 @@ header nav .form i {
   padding: 20px;
   border: 1px solid var(--mian-color);
 }
-.Pricing-cont > p{
-  margin: 50px 0 20px  ;
+.Pricing-cont > p {
+  margin: 50px 0 20px;
 }
-.Pricing-cont > a{
+.Pricing-cont > a {
   text-decoration: none;
   padding: 20px 30px;
   background-color: var(--mian-color);
@@ -835,6 +835,77 @@ header nav .form i {
   width: fit-content;
   margin: 0 auto;
   color: white;
-
 }
 /* <!-- end Pricing--> */
+/* start sup  */
+.sup {
+  background-image: url(../image/subscribe.jpg);
+  background-size: cover;
+  position: relative;
+  color: white;
+  padding-bottom: var(--main-padding);
+  padding-top: var(--main-padding);
+}
+.sup::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(0 0 0 /40%);
+}
+.sup .container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.sup form {
+  display: flex;
+  width: 500px;
+  position: relative;
+  max-width: 100%;
+}
+.sup form input[type="email"] {
+  border: 1px solid white;
+  border-right: none;
+  background: none;
+  padding: 20px 20px 20px 60px;
+  caret-color: var(--main-color);
+  width: calc(100% - 130px);
+}
+.sup form input[type="submit"] {
+  background-color: var(--mian-color);
+  border: 1px solid white;
+  border-left: none;
+  text-transform: uppercase;
+  padding: 0 5px 0 10px;
+  color: white;
+}
+.sup form i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 25px;
+}
+.sup form ::placeholder {
+  color: white;
+}
+.subscribe form input[type="email"]:focus,
+.subscribe form input[type="submit"]:focus {
+  outline: none;
+}
+.sup p {
+  line-height: 2;
+  margin-left: 50px;
+}
+@media (max-width: 992px) {
+  .sup .container{
+    flex-direction: column;
+    
+  }
+  .sup p {
+    margin:30px 0 0 0 ;
+  }
+}
+/* end sup  */
