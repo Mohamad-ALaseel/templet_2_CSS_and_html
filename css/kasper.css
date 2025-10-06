@@ -1032,4 +1032,13 @@ footer  span{
   color: var(--mian-color);
   font-weight: bold;
 }
+@media (max-width: 767px) {
+  footer hr{
+    width: 300px;
+  }
+  footer span{
+    line-height: 2;
+  }
+  
+}
 /* end foteer  */
