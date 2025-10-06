@@ -900,12 +900,136 @@ header nav .form i {
   margin-left: 50px;
 }
 @media (max-width: 992px) {
-  .sup .container{
+  .sup .container {
     flex-direction: column;
-    
   }
   .sup p {
-    margin:30px 0 0 0 ;
+    margin: 30px 0 0 0;
   }
 }
 /* end sup  */
+/* start contant  */
+.contact-us {
+  padding-bottom: var(--main-padding);
+  padding-top: var(--main-padding);
+}
+.contact-us .cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .contact-us .cont {
+    flex-direction: column-reverse;
+  }
+  .contact-us .some {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+}
+.contact-us .cont form {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 70%;
+}
+.contact-us .cont form .main-input {
+  margin-bottom: 30px;
+  padding: 20px;
+  width: 100%;
+  border: 1px solid #ccc;
+  display: block;
+  text-transform: capitalize;
+}
+.contact-us .cont form textarea.main-input {
+  height: 200px;
+}
+.contact-us .cont form .send {
+  padding: 20px;
+  text-transform: uppercase;
+  width: fit-content;
+  color: white;
+  background-color: var(--mian-color);
+  border: none;
+  margin-left: 100%;
+  transform: translateX(-100%);
+  cursor: pointer;
+}
+.contact-us .cont .some {
+  flex-basis: 25%;
+}
+.contact-us .cont .some .Get p {
+  margin-bottom: 10px;
+  color: #777;
+}
+.contact-us .cont .some .Get p.active {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  color: black;
+}
+.contact-us .cont .some .we {
+  margin-top: 80px;
+}
+.contact-us .cont .some .we p {
+  color: #777;
+  font-style: italic;
+  line-height: 2;
+}
+.contact-us .cont .some .we p.active {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  color: black;
+}
+
+/* end contant  */
+/* start foteer  */
+footer{
+  padding: 60px 0;
+  background-image: url(../image/subscribe.jpg);
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+footer::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(0 0 0 /60%);
+}
+footer .container{
+  position: relative;
+  
+}
+footer img{
+  margin-bottom: 60px;
+}
+footer p{
+  padding: 20px;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+footer hr{
+  margin-bottom: 30px;
+  width: 700px;
+  margin-left:50%;
+  transform: translateX(-50%);
+}
+footer .icons{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+footer .active{
+  font-size: 20px;
+  text-transform: capitalize;
+}
+footer  span{
+  color: var(--mian-color);
+  font-weight: bold;
+}
+/* end foteer  */
